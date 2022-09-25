@@ -1,0 +1,564 @@
+name: jibo
+description: A new Flutter project.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.0 <3.0.0'
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  audioplayers: ^1.0.1
+  flutter_staggered_grid_view: ^0.6.2
+  share_plus: ^4.1.0
+  path_provider: ^2.0.11
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^2.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+      - assets/image/navigation_bar/cock_crow.png
+      - assets/image/navigation_bar/cock_crow96.png
+      - assets/image/navigation_bar/cock_crow48.png
+      - assets/image/navigation_bar/cock_crow32.png  
+      - assets/image/navigation_bar/ctrl.png  
+      - assets/image/navigation_bar/feet.png  
+      - assets/music/m1.mp3
+      - assets/music/m2.mp3
+      - assets/music/m3.mp3
+      - assets/music/m4.mp3
+      - assets/music/m5.mp3
+      - assets/music/m6.mp3
+      - assets/music/m7.mp3
+      - assets/music/m8.mp3
+      - assets/music/m9.mp3
+      - assets/image/ji/ji0.jpg
+      - assets/image/ji/ji1.jpg
+      - assets/image/ji/ji2.jpg
+      - assets/image/ji/ji3.jpg
+      - assets/image/ji/ji4.jpg
+      - assets/image/ji/ji5.jpg
+      - assets/image/ji/ji6.jpg
+      - assets/image/ji/ji7.jpg
+      - assets/image/ji/ji8.jpg
+      - assets/image/ji/ji9.jpg
+      - assets/image/ji/ji10.jpg
+      - assets/image/ji/ji11.jpg
+      - assets/image/ji/ji12.jpg
+      - assets/image/ji/ji13.jpg
+      - assets/image/ji/ji14.jpg
+      - assets/image/ji/ji15.jpg
+      - assets/image/ji/ji16.jpg
+      - assets/image/ji/ji17.jpg
+      - assets/image/ji/ji18.jpg
+      - assets/image/ji/ji19.jpg
+      - assets/image/ji/ji20.jpg
+      - assets/image/ji/ji21.jpg
+      - assets/image/ji/ji22.jpg
+      - assets/image/ji/ji23.jpg
+      - assets/image/ji/ji24.jpg
+      - assets/image/ji/ji25.jpg
+      - assets/image/ji/ji26.jpg
+      - assets/image/ji/ji27.jpg
+      - assets/image/ji/ji28.jpg
+      - assets/image/ji/ji29.jpg
+      - assets/image/ji/ji30.jpg
+      - assets/image/ji/ji31.jpg
+      - assets/image/ji/ji32.jpg
+      - assets/image/ji/ji33.jpg
+      - assets/image/ji/ji34.jpg
+      - assets/image/ji/ji35.jpg
+      - assets/image/ji/ji36.jpg
+      - assets/image/ji/ji37.jpg
+      - assets/image/ji/ji38.jpg
+      - assets/image/ji/ji39.jpg
+      - assets/image/ji/ji40.jpg
+      - assets/image/ji/ji41.jpg
+      - assets/image/ji/ji42.jpg
+      - assets/image/ji/ji43.jpg
+      - assets/image/ji/ji44.jpg
+      - assets/image/ji/ji45.jpg
+      - assets/image/ji/ji46.jpg
+      - assets/image/ji/ji47.jpg
+      - assets/image/ji/ji48.jpg
+      - assets/image/ji/ji49.jpg
+      - assets/image/ji/ji50.jpg
+      - assets/image/ji/ji51.jpg
+      - assets/image/ji/ji52.jpg
+      - assets/image/kun/jpg/jpg_kun0.jpg
+      - assets/image/kun/jpg/jpg_kun1.jpg
+      - assets/image/kun/jpg/jpg_kun2.jpg
+      - assets/image/kun/jpg/jpg_kun3.jpg
+      - assets/image/kun/jpg/jpg_kun4.jpg
+      - assets/image/kun/jpg/jpg_kun5.jpg
+      - assets/image/kun/jpg/jpg_kun6.jpg
+      - assets/image/kun/jpg/jpg_kun7.jpg
+      - assets/image/kun/jpg/jpg_kun8.jpg
+      - assets/image/kun/jpg/jpg_kun9.jpg
+      - assets/image/kun/jpg/jpg_kun10.jpg
+      - assets/image/kun/jpg/jpg_kun11.jpg
+      - assets/image/kun/jpg/jpg_kun12.jpg
+      - assets/image/kun/jpg/jpg_kun13.jpg
+      - assets/image/kun/jpg/jpg_kun14.jpg
+      - assets/image/kun/jpg/jpg_kun15.jpg
+      - assets/image/kun/jpg/jpg_kun16.jpg
+      - assets/image/kun/jpg/jpg_kun17.jpg
+      - assets/image/kun/jpg/jpg_kun18.jpg
+      - assets/image/kun/jpg/jpg_kun19.jpg
+      - assets/image/kun/jpg/jpg_kun20.jpg
+      - assets/image/kun/jpg/jpg_kun21.jpg
+      - assets/image/kun/jpg/jpg_kun22.jpg
+      - assets/image/kun/jpg/jpg_kun23.jpg
+      - assets/image/kun/jpg/jpg_kun24.jpg
+      - assets/image/kun/jpg/jpg_kun25.jpg
+      - assets/image/kun/jpg/jpg_kun26.jpg
+      - assets/image/kun/jpg/jpg_kun27.jpg
+      - assets/image/kun/jpg/jpg_kun28.jpg
+      - assets/image/kun/jpg/jpg_kun29.jpg
+      - assets/image/kun/jpg/jpg_kun30.jpg
+      - assets/image/kun/jpg/jpg_kun31.jpg
+      - assets/image/kun/jpg/jpg_kun32.jpg
+      - assets/image/kun/jpg/jpg_kun33.jpg
+      - assets/image/kun/jpg/jpg_kun34.jpg
+      - assets/image/kun/jpg/jpg_kun35.jpg
+      - assets/image/kun/jpg/jpg_kun36.jpg
+      - assets/image/kun/jpg/jpg_kun37.jpg
+      - assets/image/kun/jpg/jpg_kun38.jpg
+      - assets/image/kun/jpg/jpg_kun39.jpg
+      - assets/image/kun/jpg/jpg_kun40.jpg
+      - assets/image/kun/jpg/jpg_kun41.jpg
+      - assets/image/kun/jpg/jpg_kun42.jpg
+      - assets/image/kun/jpg/jpg_kun43.jpg
+      - assets/image/kun/jpg/jpg_kun44.jpg
+      - assets/image/kun/jpg/jpg_kun45.jpg
+      - assets/image/kun/jpg/jpg_kun46.jpg
+      - assets/image/kun/jpg/jpg_kun47.jpg
+      - assets/image/kun/jpg/jpg_kun48.jpg
+      - assets/image/kun/jpg/jpg_kun49.jpg
+      - assets/image/kun/jpg/jpg_kun50.jpg
+      - assets/image/kun/jpg/jpg_kun51.jpg
+      - assets/image/kun/jpg/jpg_kun52.jpg
+      - assets/image/kun/jpg/jpg_kun53.jpg
+      - assets/image/kun/jpg/jpg_kun54.jpg
+      - assets/image/kun/jpg/jpg_kun55.jpg
+      - assets/image/kun/jpg/jpg_kun56.jpg
+      - assets/image/kun/jpg/jpg_kun57.jpg
+      - assets/image/kun/jpg/jpg_kun58.jpg
+      - assets/image/kun/jpg/jpg_kun59.jpg
+      - assets/image/kun/jpg/jpg_kun60.jpg
+      - assets/image/kun/jpg/jpg_kun61.jpg
+      - assets/image/kun/jpg/jpg_kun62.jpg
+      - assets/image/kun/jpg/jpg_kun63.jpg
+      - assets/image/kun/jpg/jpg_kun64.jpg
+      - assets/image/kun/jpg/jpg_kun65.jpg
+      - assets/image/kun/jpg/jpg_kun66.jpg
+      - assets/image/kun/jpg/jpg_kun67.jpg
+      - assets/image/kun/jpg/jpg_kun68.jpg
+      - assets/image/kun/jpg/jpg_kun69.jpg
+      - assets/image/kun/jpg/jpg_kun70.jpg
+      - assets/image/kun/jpg/jpg_kun71.jpg
+      - assets/image/kun/jpg/jpg_kun72.jpg
+      - assets/image/kun/jpg/jpg_kun73.jpg
+      - assets/image/kun/jpg/jpg_kun74.jpg
+      - assets/image/kun/jpg/jpg_kun75.jpg
+      - assets/image/kun/jpg/jpg_kun76.jpg
+      - assets/image/kun/jpg/jpg_kun77.jpg
+      - assets/image/kun/jpg/jpg_kun78.jpg
+      - assets/image/kun/jpg/jpg_kun79.jpg
+      - assets/image/kun/jpg/jpg_kun80.jpg
+      - assets/image/kun/jpg/jpg_kun81.jpg
+      - assets/image/kun/jpg/jpg_kun82.jpg
+      - assets/image/kun/jpg/jpg_kun83.jpg
+      - assets/image/kun/jpg/jpg_kun84.jpg
+      - assets/image/kun/jpg/jpg_kun85.jpg
+      - assets/image/kun/jpg/jpg_kun86.jpg
+      - assets/image/kun/jpg/jpg_kun87.jpg
+      - assets/image/kun/jpg/jpg_kun88.jpg
+      - assets/image/kun/jpg/jpg_kun89.jpg
+      - assets/image/kun/jpg/jpg_kun90.jpg
+      - assets/image/kun/jpg/jpg_kun91.jpg
+      - assets/image/kun/jpg/jpg_kun92.jpg
+      - assets/image/kun/jpg/jpg_kun93.jpg
+      - assets/image/kun/jpg/jpg_kun94.jpg
+      - assets/image/kun/jpg/jpg_kun95.jpg
+      - assets/image/kun/jpg/jpg_kun96.jpg
+      - assets/image/kun/jpg/jpg_kun97.jpg
+      - assets/image/kun/jpg/jpg_kun98.jpg
+      - assets/image/kun/jpg/jpg_kun99.jpg
+      - assets/image/kun/jpg/jpg_kun100.jpg
+      - assets/image/kun/jpg/jpg_kun101.jpg
+      - assets/image/kun/jpg/jpg_kun102.jpg
+      - assets/image/kun/jpg/jpg_kun103.jpg
+      - assets/image/kun/jpg/jpg_kun104.jpg
+      - assets/image/kun/jpg/jpg_kun105.jpg
+      - assets/image/kun/jpg/jpg_kun106.jpg
+      - assets/image/kun/jpg/jpg_kun107.jpg
+      - assets/image/kun/jpg/jpg_kun108.jpg
+      - assets/image/kun/jpg/jpg_kun109.jpg
+      - assets/image/kun/jpg/jpg_kun110.jpg
+      - assets/image/kun/jpg/jpg_kun111.jpg
+      - assets/image/kun/jpg/jpg_kun112.jpg
+      - assets/image/kun/jpg/jpg_kun113.jpg
+      - assets/image/kun/jpg/jpg_kun114.jpg
+      - assets/image/kun/jpg/jpg_kun115.jpg
+      - assets/image/kun/jpg/jpg_kun116.jpg
+      - assets/image/kun/jpg/jpg_kun117.jpg
+      - assets/image/kun/jpg/jpg_kun118.jpg
+      - assets/image/kun/jpg/jpg_kun119.jpg
+      - assets/image/kun/jpg/jpg_kun120.jpg
+      - assets/image/kun/jpg/jpg_kun121.jpg
+      - assets/image/kun/jpg/jpg_kun122.jpg
+      - assets/image/kun/jpg/jpg_kun123.jpg
+      - assets/image/kun/jpg/jpg_kun124.jpg
+      - assets/image/kun/jpg/jpg_kun125.jpg
+      - assets/image/kun/jpg/jpg_kun126.jpg
+      - assets/image/kun/jpg/jpg_kun127.jpg
+      - assets/image/kun/jpg/jpg_kun128.jpg
+      - assets/image/kun/jpg/jpg_kun129.jpg
+      - assets/image/kun/jpg/jpg_kun130.jpg
+      - assets/image/kun/jpg/jpg_kun131.jpg
+      - assets/image/kun/jpg/jpg_kun132.jpg
+      - assets/image/kun/jpg/jpg_kun133.jpg
+      - assets/image/kun/jpg/jpg_kun134.jpg
+      - assets/image/kun/jpg/jpg_kun135.jpg
+      - assets/image/kun/jpg/jpg_kun136.jpg
+      - assets/image/kun/jpg/jpg_kun137.jpg
+      - assets/image/kun/jpg/jpg_kun138.jpg
+      - assets/image/kun/jpg/jpg_kun139.jpg
+      - assets/image/kun/jpg/jpg_kun140.jpg
+      - assets/image/kun/jpg/jpg_kun141.jpg
+      - assets/image/kun/jpg/jpg_kun142.jpg
+      - assets/image/kun/jpg/jpg_kun143.jpg
+      - assets/image/kun/jpg/jpg_kun144.jpg
+      - assets/image/kun/jpg/jpg_kun145.jpg
+      - assets/image/kun/jpg/jpg_kun146.jpg
+      - assets/image/kun/jpg/jpg_kun147.jpg
+      - assets/image/kun/jpg/jpg_kun148.jpg
+      - assets/image/kun/jpg/jpg_kun149.jpg
+      - assets/image/kun/jpg/jpg_kun150.jpg
+      - assets/image/kun/jpg/jpg_kun151.jpg
+      - assets/image/kun/jpg/jpg_kun152.jpg
+      - assets/image/kun/jpg/jpg_kun153.jpg
+      - assets/image/kun/jpg/jpg_kun154.jpg
+      - assets/image/kun/jpg/jpg_kun155.jpg
+      - assets/image/kun/jpg/jpg_kun156.jpg
+      - assets/image/kun/jpg/jpg_kun157.jpg
+      - assets/image/kun/jpg/jpg_kun158.jpg
+      - assets/image/kun/jpg/jpg_kun159.jpg
+      - assets/image/kun/jpg/jpg_kun160.jpg
+      - assets/image/kun/jpg/jpg_kun161.jpg
+      - assets/image/kun/jpg/jpg_kun162.jpg
+      - assets/image/kun/jpg/jpg_kun163.jpg
+      - assets/image/kun/jpg/jpg_kun164.jpg
+      - assets/image/kun/jpg/jpg_kun165.jpg
+      - assets/image/kun/jpg/jpg_kun166.jpg
+      - assets/image/kun/jpg/jpg_kun167.jpg
+      - assets/image/kun/jpg/jpg_kun168.jpg
+      - assets/image/kun/jpg/jpg_kun169.jpg
+      - assets/image/kun/jpg/jpg_kun170.jpg
+      - assets/image/kun/jpg/jpg_kun171.jpg
+      - assets/image/kun/jpg/jpg_kun172.jpg
+      - assets/image/kun/jpg/jpg_kun173.jpg
+      - assets/image/kun/jpg/jpg_kun174.jpg
+      - assets/image/kun/jpg/jpg_kun175.jpg
+      - assets/image/kun/jpg/jpg_kun176.jpg
+      - assets/image/kun/jpg/jpg_kun177.jpg
+      - assets/image/kun/jpg/jpg_kun178.jpg
+      - assets/image/kun/jpg/jpg_kun179.jpg
+      - assets/image/kun/jpg/jpg_kun180.jpg
+      - assets/image/kun/jpg/jpg_kun181.jpg
+      - assets/image/kun/jpg/jpg_kun182.jpg
+      - assets/image/kun/jpg/jpg_kun183.jpg
+      - assets/image/kun/jpg/jpg_kun184.jpg
+      - assets/image/kun/jpg/jpg_kun185.jpg
+      - assets/image/kun/jpg/jpg_kun186.jpg
+      - assets/image/kun/jpg/jpg_kun187.jpg
+      - assets/image/kun/jpg/jpg_kun188.jpg
+      - assets/image/kun/jpg/jpg_kun189.jpg
+      - assets/image/kun/jpg/jpg_kun190.jpg
+      - assets/image/kun/jpg/jpg_kun191.jpg
+      - assets/image/kun/jpg/jpg_kun192.jpg
+      - assets/image/kun/jpg/jpg_kun193.jpg
+      - assets/image/kun/jpg/jpg_kun194.jpg
+      - assets/image/kun/jpg/jpg_kun195.jpg
+      - assets/image/kun/jpg/jpg_kun196.jpg
+      - assets/image/kun/jpg/jpg_kun197.jpg
+      - assets/image/kun/jpg/jpg_kun198.jpg
+      - assets/image/kun/jpg/jpg_kun199.jpg
+      - assets/image/kun/jpg/jpg_kun200.jpg
+      - assets/image/kun/jpg/jpg_kun201.jpg
+      - assets/image/kun/jpg/jpg_kun202.jpg
+      - assets/image/kun/jpg/jpg_kun203.jpg
+      - assets/image/kun/jpg/jpg_kun204.jpg
+      - assets/image/kun/jpg/jpg_kun205.jpg
+      - assets/image/kun/jpg/jpg_kun206.jpg
+      - assets/image/kun/jpg/jpg_kun207.jpg
+      - assets/image/kun/jpg/jpg_kun208.jpg
+      - assets/image/kun/jpg/jpg_kun209.jpg
+      - assets/image/kun/jpg/jpg_kun210.jpg
+      - assets/image/kun/jpg/jpg_kun211.jpg
+      - assets/image/kun/jpg/jpg_kun212.jpg
+      - assets/image/kun/jpg/jpg_kun213.jpg
+      - assets/image/kun/jpg/jpg_kun214.jpg
+      - assets/image/kun/jpg/jpg_kun215.jpg
+      - assets/image/kun/jpg/jpg_kun216.jpg
+      - assets/image/kun/jpg/jpg_kun217.jpg
+      - assets/image/kun/jpg/jpg_kun218.jpg
+      - assets/image/kun/jpg/jpg_kun219.jpg
+      - assets/image/kun/jpg/jpg_kun220.jpg
+      - assets/image/kun/jpg/jpg_kun221.jpg
+      - assets/image/kun/jpg/jpg_kun222.jpg
+      - assets/image/kun/jpg/jpg_kun223.jpg
+      - assets/image/kun/jpg/jpg_kun224.jpg
+      - assets/image/kun/jpg/jpg_kun225.jpg
+      - assets/image/kun/jpg/jpg_kun226.jpg
+      - assets/image/kun/jpg/jpg_kun227.jpg
+      - assets/image/kun/jpg/jpg_kun228.jpg
+      - assets/image/kun/jpg/jpg_kun229.jpg
+      - assets/image/kun/jpg/jpg_kun230.jpg
+      - assets/image/kun/jpg/jpg_kun231.jpg
+      - assets/image/kun/jpg/jpg_kun232.jpg
+      - assets/image/kun/jpg/jpg_kun233.jpg
+      - assets/image/kun/jpg/jpg_kun234.jpg
+      - assets/image/kun/jpg/jpg_kun235.jpg
+      - assets/image/kun/jpg/jpg_kun236.jpg
+      - assets/image/kun/jpg/jpg_kun237.jpg
+      - assets/image/kun/jpg/jpg_kun238.jpg
+      - assets/image/kun/jpg/jpg_kun239.jpg
+      - assets/image/kun/jpg/jpg_kun240.jpg
+      - assets/image/kun/jpg/jpg_kun241.jpg
+      - assets/image/kun/jpg/jpg_kun242.jpg
+      - assets/image/kun/jpg/jpg_kun243.jpg
+      - assets/image/kun/jpg/jpg_kun244.jpg
+      - assets/image/kun/jpg/jpg_kun245.jpg
+      - assets/image/kun/jpg/jpg_kun246.jpg
+      - assets/image/kun/jpg/jpg_kun247.jpg
+      - assets/image/kun/jpg/jpg_kun248.jpg
+      - assets/image/kun/jpg/jpg_kun249.jpg
+      - assets/image/kun/jpeg/jpeg_kun0.jpeg
+      - assets/image/kun/jpeg/jpeg_kun1.jpeg
+      - assets/image/kun/jpeg/jpeg_kun2.jpeg
+      - assets/image/kun/jpeg/jpeg_kun3.jpeg
+      - assets/image/kun/jpeg/jpeg_kun4.jpeg
+      - assets/image/kun/jpeg/jpeg_kun5.jpeg
+      - assets/image/kun/jpeg/jpeg_kun6.jpeg
+      - assets/image/kun/jpeg/jpeg_kun7.jpeg
+      - assets/image/kun/jpeg/jpeg_kun8.jpeg
+      - assets/image/kun/jpeg/jpeg_kun9.jpeg
+      - assets/image/kun/jpeg/jpeg_kun10.jpeg
+      - assets/image/kun/jpeg/jpeg_kun11.jpeg
+      - assets/image/kun/jpeg/jpeg_kun12.jpeg
+      - assets/image/kun/jpeg/jpeg_kun13.jpeg
+      - assets/image/kun/jpeg/jpeg_kun14.jpeg
+      - assets/image/kun/jpeg/jpeg_kun15.jpeg
+      - assets/image/kun/jpeg/jpeg_kun16.jpeg
+      - assets/image/kun/jpeg/jpeg_kun17.jpeg
+      - assets/image/kun/jpeg/jpeg_kun18.jpeg
+      - assets/image/kun/jpeg/jpeg_kun19.jpeg
+      - assets/image/kun/jpeg/jpeg_kun20.jpeg
+      - assets/image/kun/jpeg/jpeg_kun21.jpeg
+      - assets/image/kun/jpeg/jpeg_kun22.jpeg
+      - assets/image/kun/jpeg/jpeg_kun23.jpeg
+      - assets/image/kun/jpeg/jpeg_kun24.jpeg
+      - assets/image/kun/jpeg/jpeg_kun25.jpeg
+      - assets/image/kun/jpeg/jpeg_kun26.jpeg
+      - assets/image/kun/jpeg/jpeg_kun27.jpeg
+      - assets/image/kun/jpeg/jpeg_kun28.jpeg
+      - assets/image/kun/jpeg/jpeg_kun29.jpeg
+      - assets/image/kun/jpeg/jpeg_kun30.jpeg
+      - assets/image/kun/jpeg/jpeg_kun31.jpeg
+      - assets/image/kun/jpeg/jpeg_kun32.jpeg
+      - assets/image/kun/jpeg/jpeg_kun33.jpeg
+      - assets/image/kun/jpeg/jpeg_kun34.jpeg
+      - assets/image/kun/jpeg/jpeg_kun35.jpeg
+      - assets/image/kun/jpeg/jpeg_kun36.jpeg
+      - assets/image/kun/jpeg/jpeg_kun37.jpeg
+      - assets/image/kun/jpeg/jpeg_kun38.jpeg
+      - assets/image/kun/jpeg/jpeg_kun39.jpeg
+      - assets/image/kun/jpeg/jpeg_kun40.jpeg
+      - assets/image/kun/jpeg/jpeg_kun41.jpeg
+      - assets/image/kun/jpeg/jpeg_kun42.jpeg
+      - assets/image/kun/jpeg/jpeg_kun43.jpeg
+      - assets/image/kun/jpeg/jpeg_kun44.jpeg
+      - assets/image/kun/jpeg/jpeg_kun45.jpeg
+      - assets/image/kun/jpeg/jpeg_kun46.jpeg
+      - assets/image/kun/jpeg/jpeg_kun47.jpeg
+      - assets/image/kun/jpeg/jpeg_kun48.jpeg
+      - assets/image/kun/jpeg/jpeg_kun49.jpeg
+      - assets/image/kun/jpeg/jpeg_kun50.jpeg
+      - assets/image/kun/jpeg/jpeg_kun51.jpeg
+      - assets/image/kun/jpeg/jpeg_kun52.jpeg
+      - assets/image/kun/jpeg/jpeg_kun53.jpeg
+      - assets/image/kun/jpeg/jpeg_kun54.jpeg
+      - assets/image/kun/jpeg/jpeg_kun55.jpeg
+      - assets/image/kun/jpeg/jpeg_kun56.jpeg
+      - assets/image/kun/jpeg/jpeg_kun57.jpeg
+      - assets/image/kun/jpeg/jpeg_kun58.jpeg
+      - assets/image/kun/jpeg/jpeg_kun59.jpeg
+      - assets/image/kun/jpeg/jpeg_kun60.jpeg
+      - assets/image/kun/jpeg/jpeg_kun61.jpeg
+      - assets/image/kun/jpeg/jpeg_kun62.jpeg
+      - assets/image/kun/jpeg/jpeg_kun63.jpeg
+      - assets/image/kun/jpeg/jpeg_kun64.jpeg
+      - assets/image/kun/jpeg/jpeg_kun65.jpeg
+      - assets/image/kun/jpeg/jpeg_kun66.jpeg
+      - assets/image/kun/jpeg/jpeg_kun67.jpeg
+      - assets/image/kun/jpeg/jpeg_kun68.jpeg
+      - assets/image/kun/jpeg/jpeg_kun69.jpeg
+      - assets/image/kun/jpeg/jpeg_kun70.jpeg
+      - assets/image/kun/jpeg/jpeg_kun71.jpeg
+      - assets/image/kun/jpeg/jpeg_kun72.jpeg
+      - assets/image/kun/jpeg/jpeg_kun73.jpeg
+      - assets/image/kun/jpeg/jpeg_kun74.jpeg
+      - assets/image/kun/jpeg/jpeg_kun75.jpeg
+      - assets/image/kun/jpeg/jpeg_kun76.jpeg
+      - assets/image/kun/jpeg/jpeg_kun77.jpeg
+      - assets/image/kun/jpeg/jpeg_kun78.jpeg
+      - assets/image/kun/jpeg/jpeg_kun79.jpeg
+      - assets/image/kun/jpeg/jpeg_kun80.jpeg
+      - assets/image/kun/jpeg/jpeg_kun81.jpeg
+      - assets/image/kun/jpeg/jpeg_kun82.jpeg
+      - assets/image/kun/jpeg/jpeg_kun83.jpeg
+      - assets/image/kun/jpeg/jpeg_kun84.jpeg
+      - assets/image/kun/jpeg/jpeg_kun85.jpeg
+      - assets/image/kun/jpeg/jpeg_kun86.jpeg
+      - assets/image/kun/jpeg/jpeg_kun87.jpeg
+      - assets/image/kun/jpeg/jpeg_kun88.jpeg
+      - assets/image/kun/jpeg/jpeg_kun89.jpeg
+      - assets/image/kun/jpeg/jpeg_kun90.jpeg
+      - assets/image/kun/jpeg/jpeg_kun91.jpeg
+      - assets/image/kun/jpeg/jpeg_kun92.jpeg
+      - assets/image/kun/jpeg/jpeg_kun93.jpeg
+      - assets/image/kun/jpeg/jpeg_kun94.jpeg
+      - assets/image/kun/jpeg/jpeg_kun95.jpeg
+      - assets/image/kun/jpeg/jpeg_kun96.jpeg
+      - assets/image/kun/jpeg/jpeg_kun97.jpeg
+      - assets/image/kun/jpeg/jpeg_kun98.jpeg
+      - assets/image/kun/jpeg/jpeg_kun99.jpeg
+      - assets/image/kun/jpeg/jpeg_kun100.jpeg
+      - assets/image/kun/jpeg/jpeg_kun101.jpeg
+      - assets/image/kun/jpeg/jpeg_kun102.jpeg
+      - assets/image/kun/jpeg/jpeg_kun103.jpeg
+      - assets/image/kun/jpeg/jpeg_kun104.jpeg
+      - assets/image/kun/jpeg/jpeg_kun105.jpeg
+      - assets/image/kun/jpeg/jpeg_kun106.jpeg
+      - assets/image/kun/jpeg/jpeg_kun107.jpeg
+      - assets/image/kun/jpeg/jpeg_kun108.jpeg
+      - assets/image/kun/jpeg/jpeg_kun109.jpeg
+      - assets/image/kun/jpeg/jpeg_kun110.jpeg
+      - assets/image/kun/jpeg/jpeg_kun111.jpeg
+      - assets/image/kun/jpeg/jpeg_kun112.jpeg
+      - assets/image/kun/jpeg/jpeg_kun113.jpeg
+      - assets/image/kun/jpeg/jpeg_kun114.jpeg
+      - assets/image/kun/jpeg/jpeg_kun115.jpeg
+      - assets/image/kun/jpeg/jpeg_kun116.jpeg
+      - assets/image/kun/jpeg/jpeg_kun117.jpeg
+      - assets/image/kun/jpeg/jpeg_kun118.jpeg
+      - assets/image/kun/jpeg/jpeg_kun119.jpeg
+      - assets/image/kun/jpeg/jpeg_kun120.jpeg
+      - assets/image/kun/jpeg/jpeg_kun121.jpeg
+      - assets/image/kun/jpeg/jpeg_kun122.jpeg
+      - assets/image/kun/jpeg/jpeg_kun123.jpeg
+      - assets/image/kun/jpeg/jpeg_kun124.jpeg
+      - assets/image/kun/jpeg/jpeg_kun125.jpeg
+      - assets/image/kun/jpeg/jpeg_kun126.jpeg
+      - assets/image/kun/gif/gif_kun0.gif
+      - assets/image/kun/gif/gif_kun1.gif
+      - assets/image/kun/gif/gif_kun2.gif
+      - assets/image/kun/gif/gif_kun3.gif
+      - assets/image/kun/gif/gif_kun4.gif
+      - assets/image/kun/gif/gif_kun5.gif
+      - assets/image/kun/gif/gif_kun6.gif
+      - assets/image/kun/gif/gif_kun7.gif
+      - assets/image/kun/gif/gif_kun8.gif
+      - assets/image/kun/gif/gif_kun9.gif
+      - assets/image/kun/gif/gif_kun10.gif
+      - assets/image/kun/gif/gif_kun11.gif
+      - assets/image/kun/gif/gif_kun12.gif
+      - assets/image/kun/gif/gif_kun13.gif
+      - assets/image/kun/gif/gif_kun14.gif
+      - assets/image/kun/gif/gif_kun15.gif
+      - assets/image/kun/gif/gif_kun16.gif
+      - assets/image/kun/gif/gif_kun17.gif
+      - assets/image/kun/gif/gif_kun18.gif
+      - assets/image/kun/webp/webp_kun0.webp
+      - assets/image/kun/webp/webp_kun1.webp
+      - assets/image/kun/webp/webp_kun2.webp
+      - assets/image/kun/webp/webp_kun3.webp
+
+
+  
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages

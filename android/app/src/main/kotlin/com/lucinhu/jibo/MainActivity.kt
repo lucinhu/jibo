@@ -1,0 +1,6 @@
+package com.lucinhu.jibo
+
+import io.flutter.embedding.android.FlutterActivity
+
+class MainActivity: FlutterActivity() {
+}
