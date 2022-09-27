@@ -25,7 +25,8 @@ jobs:
       - name: Setup Java JDK
         uses: actions/setup-java@v3.5.1
         with: 
-            java-version: "18.0.2"
+            distribution: 'zulu'
+            java-version: "17"
             token: ${{secrets.RELEASE_TOKEN}}
 
       - name: Flutter action
