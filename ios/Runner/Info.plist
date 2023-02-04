@@ -47,5 +47,12 @@
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>需要你的允许,用以保存图片到手机</string>
+	<key>LSApplicationQueriesSchemes</key>
+    <array>
+      <string>http</string>
+	  <string>https</string>
+    </array>
 </dict>
 </plist>

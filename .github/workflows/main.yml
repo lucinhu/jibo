@@ -32,22 +32,27 @@ jobs:
       - name: Flutter action
         uses: subosito/flutter-action@v2.7.1
         with:
-            flutter-version: 3.3.2
-            channel: stable
+            flutter-version: 3.7.0-1.5.pre
+            channel: beta
       - run: flutter pub get
       # 打包apk
       - run: flutter build apk --release --split-per-abi
-      - name: Release Apk
-        uses: ncipollo/release-action@v1.10.0
-        with:
-            artifacts: "build/app/outputs/flutter-apk/app-*.apk"
-            token: ${{secrets.RELEASE_TOKEN}}
 
       # 打包linux-x64
-      #- run: flutter build linux --release --target-platform linux-x64
-      #- run: cd  build/linux/x64/release
-      #- run: tar zcf linux-x64.
-      # 打包linux-arm64
-      #- run: flutter build linux --release --target-platform linux-arm64
-      # 打包web
-      #- run: flutter build web --release
+      - run: flutter build linux --release --target-platform linux-x64
+
+      # 复制linux二进制文件到AppDir目录,准备打包
+      - run: rm -rf AppDir || true
+      - run: cp -r build/linux/x64/release/bundle AppDir
+      # 打包成AppImage
+      - name: Build AppImage
+        uses: AppImageCrafters/build-appimage@v1
+        with:
+          recipe: "./AppImageBuilder.yml"
+          
+      # 发布安装包
+      - name: Release Packages
+        uses: ncipollo/release-action@v1.10.0
+        with:
+            artifacts: "build/app/outputs/flutter-apk/app-*.apk,Jibo-release-linux-x64-x86_64.AppImage"
+            token: ${{secrets.RELEASE_TOKEN}}

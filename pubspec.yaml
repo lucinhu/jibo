@@ -17,7 +17,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
 # In Windows, build-name is used as the major, minor, and patch parts
 # of the product and file versions while build-number is used as the build suffix.
-version: 1.0.0-alpha
+version: 1.0.1
 
 environment:
   sdk: '>=2.18.0 <3.0.0'
@@ -35,11 +35,18 @@ dependencies:
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
-  cupertino_icons: ^1.0.2
+  # cupertino_icons: ^1.0.2
   audioplayers: ^1.0.1
   flutter_staggered_grid_view: ^0.6.2
-  # share_plus: ^4.1.0
+  share_plus: ^4.1.0
   path_provider: ^2.0.11
+  cross_file: ^0.3.3+2
+  permission_handler: ^10.2.0
+  dio: ^4.0.6
+  package_info_plus: ^3.0.2
+  device_info_plus: ^8.0.0
+  gallery_saver: ^2.3.2
+  url_launcher: ^6.1.8
 
 dev_dependencies:
   flutter_test:
@@ -81,6 +88,42 @@ flutter:
       - assets/music/m7.mp3
       - assets/music/m8.mp3
       - assets/music/m9.mp3
+      - assets/music/m1.mp3
+      - assets/music/m2.mp3
+      - assets/music/m3.mp3
+      - assets/music/m4.mp3
+      - assets/music/m5.mp3
+      - assets/music/m6.mp3
+      - assets/music/m7.mp3
+      - assets/music/m8.mp3
+      - assets/music/m9.mp3
+      - assets/music/m10.mp3
+      - assets/music/m11.mp3
+      - assets/music/m12.mp3
+      - assets/music/m13.mp3
+      - assets/music/m14.mp3
+      - assets/music/m15.mp3
+      - assets/music/m16.mp3
+      - assets/music/m17.mp3
+      - assets/music/m18.mp3
+      - assets/music/m19.mp3
+      - assets/music/m20.mp3
+      - assets/music/m21.mp3
+      - assets/music/m22.mp3
+      - assets/music/m23.mp3
+      - assets/music/m24.mp3
+      - assets/music/m25.mp3
+      - assets/music/m26.mp3
+      - assets/music/m27.mp3
+      - assets/music/m28.mp3
+      - assets/music/m29.mp3
+      - assets/music/m30.mp3
+      - assets/music/m31.mp3
+      - assets/music/m32.mp3
+      - assets/music/m33.mp3
+      - assets/music/m34.mp3
+      - assets/music/m35.mp3
+      - assets/music/m36.mp3
       - assets/image/ji/ji0.jpg
       - assets/image/ji/ji1.jpg
       - assets/image/ji/ji2.jpg

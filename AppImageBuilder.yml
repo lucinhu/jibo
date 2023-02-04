@@ -1,0 +1,27 @@
+# appimage-builder recipe see https://appimage-builder.readthedocs.io for details
+version: 1
+script:
+ - mkdir -p AppDir/usr/share/icons/hicolor/64x64/apps/
+ - cp AppDir/data/flutter_assets/assets/icon/ic_launcher.png AppDir/usr/share/icons/hicolor/64x64/apps/
+AppDir:
+  path: AppDir
+  app_info:
+    id: com.lucinhu.jibo
+    name: Jibo
+    icon: ic_launcher
+    version: release-linux-x64
+    exec: jibo
+    exec_args: $@
+  files:
+    # include:
+    # - /lib64/ld-linux-x86-64.so.2
+    exclude:
+    - usr/share/man
+    - usr/share/doc/*/README.*
+    - usr/share/doc/*/changelog.*
+    - usr/share/doc/*/NEWS.*
+    - usr/share/doc/*/TODO.*
+
+AppImage:
+  arch: x86_64
+  update-information: guess
