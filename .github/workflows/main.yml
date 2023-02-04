@@ -34,6 +34,9 @@ jobs:
         with:
             flutter-version: 3.7.0-1.5.pre
             channel: beta
+      - name: Install ninja-build tool
+        uses: seanmiddleditch/gha-setup-ninja@v3
+
       - run: flutter pub get
       # 打包apk
       - run: flutter build apk --release --split-per-abi
